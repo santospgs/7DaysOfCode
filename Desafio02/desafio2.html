@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>      
+        <div id="campo"></div>
+    </body>
+    </html>
+    
+    <script>
+        
+        const nome = prompt('Qual seu nome?');
+        const anoNasc = prompt('Em que ano voce nasceu?');
+        const anoAtual = new Date().getFullYear();
+        const idade = anoAtual - anoNasc;
+        const linguagem = prompt('Qual linguagem de programação você está estudando?');
+
+        alert(`Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}`);
+
+        var resposta = prompt(`Você gosta de estudar ${linguagem}?. (Responda 1 para SIM e 2 para NÃO).`);
+        //console.log(resposta)
+
+        while (!(resposta == '1') || !(resposta == '2')){            
+            if (resposta == '1'){
+                alert(`Muito bom! Continue estudando e você terá muito sucesso`);
+                break;
+            } else if (resposta == '2') {
+                alert(`Ahh que pena... Já tentou aprender outras linguagens?`);
+                break
+            } else {
+                alert('Opção inválida. Digite 1 para SIM e 2 para NÃO.');
+                var resposta = prompt(`Você gosta de estudar ${linguagem}. (Responda 1 para SIM e 2 para NÃO).`);
+            }
+        }
+            
+       
+    </script>
