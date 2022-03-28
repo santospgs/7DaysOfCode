@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+
+        body{
+            background:linear-gradient(113.43133737173594deg, rgba(0, 9, 176,1) 7.0875%,rgba(0, 9, 175,1) 7.0875%,rgba(0, 212, 162,1) 83.08749999999999%);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;    
+        }
+
+        .box{
+            width: 380px;
+            height: 180px;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+            border-radius: 10px;
+            background-color: rgb(0, 1, 70);
+            color: aliceblue;
+        }
+
+        button, input, span{
+            position: absolute;
+            margin: 6px;
+        }
+        .box input{top: 40px;max-width: 230px;}
+        .box button{top: 90px;max-width: 230px;}
+        .box span{top:140px;font-size: 12px;max-width: 350px;}
+
+        #regras{            
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="regras">
+        Regras do jogo:<br>
+        - Você deve acertar o número que é gerado pela máquina<br> 
+        - Você tem três tentativas para acertar<br>
+        - Toda vez que as três tentativas acabaram um novo número é gerado<br>
+        Boa sorte! 
+    </div>
+    <div class="box">
+        <input type="text" id="numUsuario" class="form-control" placeholder="Digite um número de 0 a 10">
+        <button onclick="verificaNumero()" class="form-control btn-primary">jogar</button>
+        <span id="resultado"></span>        
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>
