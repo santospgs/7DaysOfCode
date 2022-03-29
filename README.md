@@ -26,9 +26,7 @@
   - Na segunda parte (desafio 06), deveria ser implementada uma funcionalidade na qual o usuário pudesse excluir um item da lista<br>
   <i>Status:</i> <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji>
 
-  <i>Status:</i> <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji>
-
 <strong><h3>#Desafio 07:</h3></strong>
-  - Criação de uma calculadora 
+  Criação de uma calculadora<br> 
   <i>Status:</i> <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji>
 
